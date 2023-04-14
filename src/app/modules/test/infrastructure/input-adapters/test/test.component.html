@@ -1,0 +1,37 @@
+<div class="card">
+    <h5>Test Register</h5>
+    <div class="formgrid grid">
+        <div class="field col">
+            <label for="firstname2">Firstname</label>
+            <input id="firstname2" type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+        </div>
+        <div class="field col">
+            <label for="lastname2">Lastname</label>
+            <input id="lastname2" type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+        </div>
+        <div class="field col">
+            <label for="codePost">Code Post</label>
+            <input id="codePost" type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+        </div>
+    </div>
+    <div class="formgrid grid">
+        <div class="field col">
+            <label for="year">Year</label>
+            <p-calendar view="year" dateFormat="yy" inputId="yearpicker"></p-calendar>
+            <p-calendar view="month" dateFormat="mm/yy" [yearNavigator]="true" yearRange="2000:2030"></p-calendar>
+        </div>
+        <div class="field col">
+            <label for="country">Country</label>
+            <input id="country" type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+        </div>
+        <div class="field col">
+            <label for="currentDate">Date</label>
+            <p>{{currentDate | date:'yyyy-MMM-dd'}}</p>
+        </div>
+    </div>
+    <div class="formgrid grid">
+        <div class="field col">
+            <p-button label="Submit" icon="pi pi-check" iconPos="right"></p-button>
+        </div>
+    </div>
+</div>
